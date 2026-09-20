@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Principales causas de la deforestación.">
+  <title>HUELLA | Causas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-transition"></div>
+  <div class="reading-progress" id="readingProgress"></div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="index.html"><span class="brand-mark">H</span><span class="brand-text">HUELLA</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav">
+      <a class="nav-link" href="index.html">Inicio</a>
+      <a class="nav-link active" href="causas.html">Causas</a>
+      <a class="nav-link" href="impactos.html">Impactos</a>
+      <a class="nav-link" href="sociedad.html">Sociedad</a>
+      <a class="nav-link" href="soluciones.html">Soluciones</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="inner-hero causes-hero">
+      <div class="inner-hero-bg parallax-layer" data-speed="0.16"></div>
+      <div class="hero-overlay"></div>
+      <div class="inner-hero-content">
+        <p class="eyebrow reveal-up">02 · Causas</p>
+        <h1 class="reveal-up">¿POR QUÉ DESAPARECEN LOS BOSQUES?</h1>
+        <p class="reveal-up">La deforestación responde a múltiples presiones económicas, territoriales y productivas.</p>
+      </div>
+    </section>
+
+    <section class="section story-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Origen del problema</p>
+          <h2>Cuatro factores que transforman el paisaje.</h2>
+        </div>
+
+        <article class="story-row reveal">
+          <div class="story-image">
+            <img src="Imagenes/cultivos.jpg" alt="Terreno agrícola cerca de una zona boscosa">
+          </div>
+          <div class="story-copy">
+            <span class="big-index">01</span>
+            <p class="eyebrow">Expansión agrícola</p>
+            <h3>Más terreno para cultivos y ganadería.</h3>
+            <p>Cuando nuevas áreas naturales se convierten en terrenos productivos, la cobertura forestal disminuye y los hábitats quedan fragmentados.</p>
+          </div>
+        </article>
+
+        <article class="story-row reverse reveal">
+          <div class="story-image">
+            <img src="Imagenes/tala.jpg" alt="Troncos de árboles cortados">
+          </div>
+          <div class="story-copy">
+            <span class="big-index">02</span>
+            <p class="eyebrow">Explotación maderera</p>
+            <h3>La extracción intensiva reduce la capacidad de recuperación.</h3>
+            <p>La tala sin manejo sostenible puede eliminar árboles más rápido de lo que el ecosistema puede regenerarlos.</p>
+          </div>
+        </article>
+
+        <article class="story-row reveal">
+          <div class="story-image">
+            <img src="Imagenes/urbano.jpg" alt="Expansión urbana junto a zonas verdes">
+          </div>
+          <div class="story-copy">
+            <span class="big-index">03</span>
+            <p class="eyebrow">Crecimiento urbano</p>
+            <h3>Carreteras, viviendas y nuevas construcciones.</h3>
+            <p>La ampliación de ciudades e infraestructura puede sustituir áreas naturales y dividir corredores ecológicos.</p>
+          </div>
+        </article>
+
+        <article class="story-row reverse reveal">
+          <div class="story-image">
+            <img src="Imagenes/incendio.jpg" alt="Incendio forestal">
+          </div>
+          <div class="story-copy">
+            <span class="big-index">04</span>
+            <p class="eyebrow">Incendios</p>
+            <h3>El fuego puede cambiar un ecosistema en pocas horas.</h3>
+            <p>Los incendios naturales o provocados pueden destruir grandes superficies, especialmente cuando las condiciones son secas y el bosque ya está degradado.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="next-page-panel">
+      <div class="next-page-bg next-impactos"></div>
+      <div class="next-page-overlay"></div>
+      <div class="next-page-content reveal">
+        <p class="eyebrow">Siguiente capítulo</p>
+        <h2>¿Qué ocurre después?</h2>
+        <a href="impactos.html" class="btn btn-primary page-link">Ver impactos</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><a class="brand footer-brand" href="index.html"><span class="brand-mark">H</span><span class="brand-text">HUELLA</span></a><p>Proyecto educativo sobre la deforestación y su impacto en la sociedad.</p></div>
+    <div class="footer-links"><a href="index.html">Inicio</a><a href="impactos.html">Impactos</a><a href="sociedad.html">Sociedad</a><a href="soluciones.html">Soluciones</a></div>
+    <p class="copyright">© <span id="year"></span> HUELLA</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
