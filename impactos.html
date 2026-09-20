@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Impactos ambientales de la deforestación.">
+  <title>HUELLA | Impactos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-transition"></div>
+  <div class="reading-progress" id="readingProgress"></div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="index.html"><span class="brand-mark">H</span><span class="brand-text">HUELLA</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav">
+      <a class="nav-link" href="index.html">Inicio</a>
+      <a class="nav-link" href="causas.html">Causas</a>
+      <a class="nav-link active" href="impactos.html">Impactos</a>
+      <a class="nav-link" href="sociedad.html">Sociedad</a>
+      <a class="nav-link" href="soluciones.html">Soluciones</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="inner-hero impacts-hero">
+      <div class="inner-hero-bg parallax-layer" data-speed="0.16"></div>
+      <div class="hero-overlay darker"></div>
+      <div class="inner-hero-content">
+        <p class="eyebrow reveal-up">03 · Impactos</p>
+        <h1 class="reveal-up">CUANDO EL BOSQUE CAMBIA, TODO A SU ALREDEDOR CAMBIA.</h1>
+        <p class="reveal-up">Los efectos se extienden desde especies individuales hasta ciclos completos de agua, suelo y clima.</p>
+      </div>
+    </section>
+
+    <section class="section impact-grid-section">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="eyebrow">Efectos ambientales</p>
+          <h2>Un problema conectado.</h2>
+        </div>
+
+        <div class="impact-grid">
+          <article class="impact-card reveal">
+            <span>01</span>
+            <h3>Biodiversidad</h3>
+            <p>La pérdida y fragmentación del hábitat reduce el espacio disponible para muchas especies.</p>
+          </article>
+          <article class="impact-card reveal">
+            <span>02</span>
+            <h3>Agua</h3>
+            <p>Los bosques ayudan a infiltrar, retener y regular el movimiento del agua en el territorio.</p>
+          </article>
+          <article class="impact-card reveal">
+            <span>03</span>
+            <h3>Suelo</h3>
+            <p>Sin raíces y cobertura vegetal, el suelo queda más expuesto a erosión y pérdida de nutrientes.</p>
+          </article>
+          <article class="impact-card reveal">
+            <span>04</span>
+            <h3>Clima</h3>
+            <p>Los bosques almacenan carbono y participan en la regulación de temperatura y humedad.</p>
+          </article>
+          <article class="impact-card reveal">
+            <span>05</span>
+            <h3>Ecosistemas</h3>
+            <p>Cuando desaparecen especies o hábitats, también cambian las relaciones entre organismos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="full-image-statement">
+      <img src="Imagenes/extension.jpg" alt="Zona extensa afectada por deforestación">
+      <div class="full-image-overlay"></div>
+      <div class="full-image-copy reveal">
+        <p class="eyebrow">Efecto acumulativo</p>
+        <h2>Una pérdida local puede provocar consecuencias mucho más amplias.</h2>
+      </div>
+    </section>
+
+    <section class="section stat-section">
+      <div class="container stat-layout">
+        <div class="stat-copy reveal-left">
+          <p class="eyebrow">Conexión</p>
+          <h2>El bosque funciona como una red.</h2>
+          <p>Agua, vegetación, animales, microorganismos y suelo dependen unos de otros. Cambiar una parte puede alterar el resto.</p>
+        </div>
+        <div class="stat-visual reveal-right">
+          <div class="orbital-ring ring-one"></div>
+          <div class="orbital-ring ring-two"></div>
+          <div class="orbital-core">EQUILIBRIO</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="next-page-panel">
+      <div class="next-page-bg next-sociedad"></div>
+      <div class="next-page-overlay"></div>
+      <div class="next-page-content reveal">
+        <p class="eyebrow">Siguiente capítulo</p>
+        <h2>El impacto también llega a las personas.</h2>
+        <a href="sociedad.html" class="btn btn-primary page-link">Ver sociedad</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><a class="brand footer-brand" href="index.html"><span class="brand-mark">H</span><span class="brand-text">HUELLA</span></a><p>Proyecto educativo sobre la deforestación y su impacto en la sociedad.</p></div>
+    <div class="footer-links"><a href="index.html">Inicio</a><a href="causas.html">Causas</a><a href="sociedad.html">Sociedad</a><a href="soluciones.html">Soluciones</a></div>
+    <p class="copyright">© <span id="year"></span> HUELLA</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
