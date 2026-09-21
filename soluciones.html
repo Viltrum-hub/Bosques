@@ -11,28 +11,28 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page-transition"></div>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
   <div class="reading-progress" id="readingProgress"></div>
 
   <header class="site-header" id="siteHeader">
-    <a class="brand" href="index.html"><span class="brand-mark">H</span><span class="brand-text">HUELLA</span></a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
-    <nav class="main-nav" id="mainNav">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">↟</span><span class="brand-text">HUELLA</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-controls="mainNav" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
       <a class="nav-link" href="index.html">Inicio</a>
       <a class="nav-link" href="causas.html">Causas</a>
       <a class="nav-link" href="impactos.html">Impactos</a>
       <a class="nav-link" href="sociedad.html">Sociedad</a>
-      <a class="nav-link active" href="soluciones.html">Soluciones</a>
+      <a class="nav-link active" aria-current="page" href="soluciones.html">Soluciones</a>
     </nav>
   </header>
 
-  <main>
+  <main id="contenido" tabindex="-1">
     <section class="inner-hero solutions-hero">
       <div class="inner-hero-bg parallax-layer" data-speed="0.16"></div>
       <div class="hero-overlay"></div>
       <div class="inner-hero-content">
         <p class="eyebrow reveal-up">05 · Soluciones</p>
-        <h1 class="reveal-up">TODAVÍA PODEMOS CAMBIAR LA HUELLA.</h1>
+        <h1 class="reveal-up">Todavía podemos cambiar la huella.</h1>
         <p class="reveal-up">Restaurar, proteger y reducir la presión sobre los bosques puede modificar el rumbo.</p>
       </div>
     </section>
@@ -86,7 +86,7 @@
 
     <section class="solution-highlight">
       <div class="solution-highlight-image reveal-left">
-        <img src="Imagenes/refo.jpg" alt="Plantación de nuevos árboles">
+        <img loading="lazy" decoding="async" src="Imagenes/refo.jpg" alt="Plantación de nuevos árboles">
       </div>
       <div class="solution-highlight-copy reveal-right">
         <p class="eyebrow">Una huella diferente</p>
@@ -101,16 +101,16 @@
       <div class="closing-overlay"></div>
       <div class="closing-content reveal">
         <p class="eyebrow">HUELLA</p>
-        <h2>EL FUTURO DEL BOSQUE TAMBIÉN DEPENDE DE LO QUE DECIDIMOS CONSERVAR.</h2>
+        <h2>El futuro del bosque también depende de lo que decidimos conservar.</h2>
         <a href="index.html" class="btn btn-primary page-link">Inicio</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div><a class="brand footer-brand" href="index.html"><span class="brand-mark">H</span><span class="brand-text">HUELLA</span></a><p>Proyecto educativo sobre la deforestación y su impacto en la sociedad.</p></div>
+    <div><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">↟</span><span class="brand-text">HUELLA</span></a><p>Proyecto educativo sobre la deforestación y su impacto en la sociedad.</p></div>
     <div class="footer-links"><a href="index.html">Inicio</a><a href="causas.html">Causas</a><a href="impactos.html">Impactos</a><a href="sociedad.html">Sociedad</a></div>
-    <p class="copyright">© <span id="year"></span> HUELLA</p>
+    <p class="copyright">© <span id="year">2026</span> HUELLA</p>
   </footer>
 
   <script src="script.js"></script>

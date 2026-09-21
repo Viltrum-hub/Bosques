@@ -1,0 +1,22 @@
+HUELLA — Rediseño visual
+
+Abre index.html en tu navegador. Mantén los cinco HTML, styles.css y script.js juntos.
+No necesitas instalar dependencias ni compilar el proyecto.
+
+IMÁGENES
+La carpeta Imagenes no estaba entre los archivos recibidos. El diseño conserva
+sus rutas y muestra fondos gráficos de respaldo cuando faltan las fotografías.
+Añade tu carpeta Imagenes al mismo nivel que index.html con estos archivos:
+b.jpg, huella.jpg, pagina2.jpg, so.jpg, recuperacion.jpg, hoja.jpg, final.jpg,
+causas.jpg, impacto.jpg, sociedad.jpg, doble.jpg, cultivos.jpg, tala.jpg,
+urbano.jpg, incendio.jpg, extension.jpg, comunidad.jpg y refo.jpg.
+Respeta mayúsculas y nombres. Los fondos de respaldo son decorativos.
+
+Las fuentes Manrope y Space Grotesk se cargan desde Google Fonts; sin conexión
+se utiliza Arial. El contenido y la navegación siguen disponibles sin JavaScript.
+
+CAMBIOS
+Paleta verde bosque y marfil, jerarquía tipográfica, tarjetas y secciones
+unificadas, tamaños adaptables, menú móvil con Escape, indicador de página
+actual, acceso directo al contenido, foco visible y movimiento reducido.
+Se conservaron los contenidos educativos y las cinco páginas originales.

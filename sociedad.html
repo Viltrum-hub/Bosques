@@ -11,28 +11,28 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page-transition"></div>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
   <div class="reading-progress" id="readingProgress"></div>
 
   <header class="site-header" id="siteHeader">
-    <a class="brand" href="index.html"><span class="brand-mark">H</span><span class="brand-text">HUELLA</span></a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
-    <nav class="main-nav" id="mainNav">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">↟</span><span class="brand-text">HUELLA</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-controls="mainNav" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
       <a class="nav-link" href="index.html">Inicio</a>
       <a class="nav-link" href="causas.html">Causas</a>
       <a class="nav-link" href="impactos.html">Impactos</a>
-      <a class="nav-link active" href="sociedad.html">Sociedad</a>
+      <a class="nav-link active" aria-current="page" href="sociedad.html">Sociedad</a>
       <a class="nav-link" href="soluciones.html">Soluciones</a>
     </nav>
   </header>
 
-  <main>
+  <main id="contenido" tabindex="-1">
     <section class="inner-hero society-hero">
       <div class="inner-hero-bg parallax-layer" data-speed="0.16"></div>
       <div class="hero-overlay"></div>
       <div class="inner-hero-content">
         <p class="eyebrow reveal-up">04 · Sociedad</p>
-        <h1 class="reveal-up">LA DEFORESTACIÓN TAMBIÉN CAMBIA LA VIDA HUMANA.</h1>
+        <h1 class="reveal-up">La deforestación también cambia la vida humana.</h1>
         <p class="reveal-up">Las comunidades dependen de recursos naturales, agua, suelo y condiciones ambientales estables.</p>
       </div>
     </section>
@@ -40,7 +40,7 @@
     <section class="section human-section">
       <div class="container human-layout">
         <div class="human-image reveal-left">
-          <img src="Imagenes/comunidad.jpg" alt="Comunidad y entorno natural">
+          <img loading="lazy" decoding="async" src="Imagenes/comunidad.jpg" alt="Comunidad y entorno natural">
           <div class="image-badge">PERSONAS + ENTORNO</div>
         </div>
 
@@ -98,9 +98,9 @@
   </main>
 
   <footer class="site-footer">
-    <div><a class="brand footer-brand" href="index.html"><span class="brand-mark">H</span><span class="brand-text">HUELLA</span></a><p>Proyecto educativo sobre la deforestación y su impacto en la sociedad.</p></div>
+    <div><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">↟</span><span class="brand-text">HUELLA</span></a><p>Proyecto educativo sobre la deforestación y su impacto en la sociedad.</p></div>
     <div class="footer-links"><a href="index.html">Inicio</a><a href="causas.html">Causas</a><a href="impactos.html">Impactos</a><a href="soluciones.html">Soluciones</a></div>
-    <p class="copyright">© <span id="year"></span> HUELLA</p>
+    <p class="copyright">© <span id="year">2026</span> HUELLA</p>
   </footer>
 
   <script src="script.js"></script>

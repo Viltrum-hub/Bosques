@@ -5,6 +5,14 @@
   const mainNav = document.getElementById('mainNav');
   const progress = document.getElementById('readingProgress');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  body.classList.add('js');
+
+  // Capa de transición creada por JavaScript para mantener el HTML limpio.
+  const pageTransition = document.createElement('div');
+  pageTransition.className = 'page-transition';
+  pageTransition.setAttribute('aria-hidden', 'true');
+  body.prepend(pageTransition);
+  window.addEventListener('pageshow', () => body.classList.remove('is-leaving'));
 
   // Entrada inicial
   body.classList.add('page-enter');
@@ -56,6 +64,7 @@
     mainNav.classList.remove('open');
     menuToggle.classList.remove('active');
     menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.setAttribute('aria-label', 'Abrir menú');
     body.style.overflow = '';
   };
 
@@ -65,10 +74,21 @@
       mainNav.classList.toggle('open', open);
       menuToggle.classList.toggle('active', open);
       menuToggle.setAttribute('aria-expanded', String(open));
+      menuToggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
       body.style.overflow = open ? 'hidden' : '';
     });
 
     mainNav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && mainNav.classList.contains('open')) {
+        closeMenu();
+        menuToggle.focus();
+      }
+    });
+    document.addEventListener('click', event => {
+      if (!header?.contains(event.target)) closeMenu();
+    });
+    window.matchMedia('(min-width: 901px)').addEventListener('change', closeMenu);
   }
 
   // Header + barra de lectura
@@ -85,6 +105,16 @@
 
   updateScrollUI();
   window.addEventListener('scroll', updateScrollUI, { passive: true });
+
+  // Respaldo visual cuando una fotografía todavía no está disponible.
+  document.querySelectorAll('img').forEach(img => {
+    const showFallback = () => {
+      img.parentElement?.classList.add('media-fallback', 'is-visible');
+      img.hidden = true;
+    };
+    img.addEventListener('error', showFallback);
+    if (img.complete && img.naturalWidth === 0) showFallback();
+  });
 
   // Reveals al entrar en viewport
   const revealTargets = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-up, .human-image, .solution-highlight-image, .full-image-statement, .story-row');
@@ -153,34 +183,9 @@
     window.addEventListener('resize', requestParallax);
   }
 
-  // Tilt muy sutil en tarjetas, solo escritorio
-  const tiltCards = document.querySelectorAll('.feature-panel, .impact-card, .social-card, .solution-item');
-  if (!reduceMotion && window.matchMedia('(pointer:fine)').matches) {
-    tiltCards.forEach(card => {
-      card.setAttribute('data-tilt', '');
-      card.addEventListener('pointermove', (event) => {
-        const rect = card.getBoundingClientRect();
-        const x = (event.clientX - rect.left) / rect.width - 0.5;
-        const y = (event.clientY - rect.top) / rect.height - 0.5;
-        card.style.transform = `perspective(900px) rotateX(${(-y * 3).toFixed(2)}deg) rotateY(${(x * 4).toFixed(2)}deg) translateY(-7px)`;
-      });
-      card.addEventListener('pointerleave', () => {
-        card.style.transform = '';
-      });
-    });
-  }
+  // Las tarjetas usan únicamente transiciones CSS estables.
 
-  // Movimiento muy suave del hero con el mouse
-  const hero = document.querySelector('.hero-home');
-  const heroBg = hero?.querySelector('.hero-bg');
-  if (hero && heroBg && !reduceMotion && window.matchMedia('(pointer:fine)').matches) {
-    hero.addEventListener('pointermove', (event) => {
-      const x = (event.clientX / window.innerWidth - 0.5) * 14;
-      const y = (event.clientY / window.innerHeight - 0.5) * 10;
-      heroBg.style.marginLeft = `${x}px`;
-      heroBg.style.marginTop = `${y}px`;
-    });
-  }
+  // El fondo del hero permanece estable al mover el puntero.
 
   // Transición entre páginas internas
   document.querySelectorAll('a[href]').forEach(link => {

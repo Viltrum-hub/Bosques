@@ -11,21 +11,21 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="page-home">
-  <div class="page-transition"></div>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
   <div class="reading-progress" id="readingProgress"></div>
 
   <header class="site-header" id="siteHeader">
     <a class="brand" href="index.html" aria-label="HUELLA - Inicio">
-      <span class="brand-mark">H</span>
+      <span class="brand-mark" aria-hidden="true">↟</span>
       <span class="brand-text">HUELLA</span>
     </a>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+    <button class="menu-toggle" id="menuToggle" aria-controls="mainNav" aria-label="Abrir menú" aria-expanded="false">
       <span></span><span></span>
     </button>
 
-    <nav class="main-nav" id="mainNav">
-      <a class="nav-link active" href="index.html">Inicio</a>
+    <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+      <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
       <a class="nav-link" href="causas.html">Causas</a>
       <a class="nav-link" href="impactos.html">Impactos</a>
       <a class="nav-link" href="sociedad.html">Sociedad</a>
@@ -33,7 +33,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="contenido" tabindex="-1">
     <section class="hero hero-home">
       <div class="hero-bg parallax-layer" data-speed="0.18"></div>
       <div class="hero-overlay"></div>
@@ -46,8 +46,8 @@
       <div class="hero-content">
         <p class="eyebrow reveal-up">Deforestación · Naturaleza · Sociedad</p>
         <h1 class="hero-title reveal-up">
-          EL BOSQUE NO DESAPARECE
-          <span>DE UN DÍA PARA OTRO.</span>
+          El bosque no desaparece
+          <span>de un día para otro.</span>
         </h1>
         <p class="hero-copy reveal-up">
           Cada árbol perdido altera un sistema completo: el suelo, el agua,
@@ -66,7 +66,7 @@
 
       <div class="scroll-indicator" aria-hidden="true">
         <span></span>
-        <p>Desliza</p>
+        <p>Explora la huella</p>
       </div>
     </section>
 
@@ -103,10 +103,10 @@
     </section>
 
     <section class="split-showcase section">
-      <div class="split-image reveal-left">
-        <img src="Imagenes/doble.jpg" alt="Bosque verde y saludable">
+      <div class="split-image">
+        <img loading="lazy" decoding="async" src="Imagenes/doble.jpg" alt="Bosque verde y saludable">
       </div>
-      <div class="split-content reveal-right">
+      <div class="split-content">
         <p class="eyebrow">Dos realidades</p>
         <h2>Conservar o transformar.</h2>
         <p>
@@ -131,7 +131,7 @@
   <footer class="site-footer">
     <div>
       <a class="brand footer-brand" href="index.html">
-        <span class="brand-mark">H</span>
+        <span class="brand-mark" aria-hidden="true">↟</span>
         <span class="brand-text">HUELLA</span>
       </a>
       <p>Proyecto educativo sobre la deforestación y su impacto en la sociedad.</p>
@@ -142,7 +142,7 @@
       <a href="sociedad.html">Sociedad</a>
       <a href="soluciones.html">Soluciones</a>
     </div>
-    <p class="copyright">© <span id="year"></span> HUELLA</p>
+    <p class="copyright">© <span id="year">2026</span> HUELLA</p>
   </footer>
 
   <script src="script.js"></script>
