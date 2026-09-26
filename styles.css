@@ -872,17 +872,18 @@ html { scroll-padding-top: calc(var(--header-h) + 22px); }
 .text-link:hover span, .arrow-link:hover span { transform: translate(6px,-2px); }
 .feature-panel, .impact-card, .social-card, .solution-item { isolation: isolate; }
 .image-badge { box-shadow: 0 10px 30px rgba(0,0,0,.24); }
-.hero-bg { background-image: url("Imagenes/bosque-aereo-ozark.jpg"), radial-gradient(circle at 72% 30%, #315f45, transparent 32%), linear-gradient(135deg,#07110d,#163d29); }
+.hero-bg { background-image: url("Imagenes/amanecer.jpg"), radial-gradient(circle at 72% 30%, #315f45, transparent 32%), linear-gradient(135deg,#07110d,#163d29); }
 .causes-hero .inner-hero-bg { background-image: url("Imagenes/huella.jpg"), radial-gradient(circle at 70% 35%, #315f45, transparent 34%), linear-gradient(135deg,#07110d,#173d2a); }
 .impacts-hero .inner-hero-bg { background-image: url("Imagenes/pagina2.jpg"), radial-gradient(circle at 68% 28%, #664a31, transparent 32%), linear-gradient(135deg,#07110d,#26382b); }
 .society-hero .inner-hero-bg { background-image: url("Imagenes/so.jpg"), radial-gradient(circle at 72% 30%, #536747, transparent 32%), linear-gradient(135deg,#07110d,#1d3828); }
 .solutions-hero .inner-hero-bg { background-image: url("Imagenes/recuperacion.jpg"), radial-gradient(circle at 70% 32%, #3f704d, transparent 34%), linear-gradient(135deg,#07110d,#173e28); }
-.quote-bg { background-image: linear-gradient(135deg,#0b2117,#27573b); }
-.closing-bg { background-image: url("Imagenes/final.jpg"), linear-gradient(135deg,#07110d,#245537); }
+.quote-bg { background-image:url("Imagenes/amanecer.jpg"), linear-gradient(135deg,#0b2117,#27573b); }
+.closing-bg { background-image: url("Imagenes/ama.jpg"), linear-gradient(135deg,#07110d,#245537); }
 .next-impactos { background-image: url("Imagenes/causas.jpg"), linear-gradient(135deg,#07110d,#324c31); }
 .next-sociedad { background-image: url("Imagenes/impacto.jpg"), linear-gradient(135deg,#07110d,#39422b); }
 .next-soluciones { background-image: url("Imagenes/sociedad.jpg"), linear-gradient(135deg,#07110d,#254d36); }
 .media-fallback {
+  
   min-height: 280px;
   background:
     linear-gradient(135deg, rgba(94,228,134,.11), transparent 55%),
@@ -1048,13 +1049,13 @@ body:not(.js) .split-showcase .split-image, body:not(.js) .split-showcase .split
 
 /* Nuevos capítulos: Nosotros y Marco teórico */
 .about-hero .inner-hero-bg {
-  background-image: url("Imagenes/bosque.jpg"), linear-gradient(135deg, #07110d, #1b432b);
+  background-image: url("Imagenes/iniciobajo.jpg"), linear-gradient(135deg, #07110d, #1b432b);
 }
 .theory-hero .inner-hero-bg {
-  background-image: url("Imagenes/bosque.jpg"), linear-gradient(135deg, #07110d, #245537);
+  background-image: url("Imagenes/marco.jpg"), linear-gradient(135deg, #07110d, #245537);
 }
-.next-theory { background-image: url("Imagenes/bosque.jpg"), linear-gradient(135deg, #07110d, #245537); }
-.next-causes { background-image: url("Imagenes/causas.jpg"), linear-gradient(135deg, #07110d, #39422b); }
+.next-theory { background-image: url("Imagenes/nbajo.jpg"), linear-gradient(135deg, #07110d, #245537); }
+.next-causes { background-image: url("Imagenes/mbajo.jpg"), linear-gradient(135deg, #07110d, #39422b); }
 .accent-word { color: var(--green-soft); }
 
 .home-route-section {
