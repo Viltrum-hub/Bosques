@@ -1157,6 +1157,20 @@ body:not(.js) .split-showcase .split-image, body:not(.js) .split-showcase .split
 .theory-synthesis-grid h2 { max-width: 680px; }
 .theory-synthesis-grid p:not(.eyebrow) { max-width: 620px; }
 .theory-source-note { padding: 18px 0 0 18px; border-left: 2px solid var(--green); font-size: .83rem; }
+.theory-references { border-top: 1px solid var(--line); background: linear-gradient(180deg, rgba(5, 17, 10, .5), rgba(14, 35, 22, .66)); }
+.theory-reference-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+.theory-reference {
+  min-height: 200px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 22px 22px 22px 7px;
+  background: rgba(14, 34, 22, .72);
+  transition: transform .3s ease, border-color .3s ease;
+}
+a.theory-reference:hover { transform: translateY(-5px); border-color: var(--green-soft); }
+.theory-reference > span { color: var(--green-soft); font-size: .72rem; font-weight: 800; letter-spacing: .12em; }
+.theory-reference h3 { margin: 20px 0 10px; font-size: clamp(1.3rem, 2vw, 1.7rem); }
+.theory-reference p { margin: 0; font-size: .9rem; }
 
 @media (max-width: 1050px) {
   .home-route-grid, .about-intro-grid, .theory-opening-grid, .about-statement-grid, .theory-chapter, .theory-synthesis-grid { grid-template-columns: 1fr; }
@@ -1167,6 +1181,7 @@ body:not(.js) .split-showcase .split-image, body:not(.js) .split-showcase .split
   .theory-chapter { gap: 22px; }
   .theory-chapter-heading { padding-top: 46px; }
   .theory-synthesis-art { min-height: 370px; }
+  .theory-reference-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 620px) {
   .home-route-card { min-height: 150px; }
