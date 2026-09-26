@@ -88,7 +88,7 @@
     document.addEventListener('click', event => {
       if (!header?.contains(event.target)) closeMenu();
     });
-    window.matchMedia('(min-width: 901px)').addEventListener('change', closeMenu);
+    window.matchMedia('(min-width: 1051px)').addEventListener('change', closeMenu);
   }
 
   // Header + barra de lectura
