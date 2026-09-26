@@ -264,7 +264,6 @@ body.page-enter .page-transition { animation: pageEnter .7s cubic-bezier(.77,0,.
 .impacts-hero .inner-hero-bg { background-image: url("Imagenes/pagina2.jpg"); }
 .society-hero .inner-hero-bg { background-image: url("Imagenes/so.jpg"); }
 .solutions-hero .inner-hero-bg { background-image: url("Imagenes/recuperacion.jpg"); }
-.quote-bg { background-image: linear-gradient(135deg, #0b2117, #27573b); }
 .closing-bg { background-image: url("Imagenes/final.jpg"); }
 .next-impactos { background-image: url("Imagenes/causas.jpg"); }
 .next-sociedad { background-image: url("Imagenes/impacto.jpg"); }
@@ -877,7 +876,6 @@ html { scroll-padding-top: calc(var(--header-h) + 22px); }
 .impacts-hero .inner-hero-bg { background-image: url("Imagenes/pagina2.jpg"), radial-gradient(circle at 68% 28%, #664a31, transparent 32%), linear-gradient(135deg,#07110d,#26382b); }
 .society-hero .inner-hero-bg { background-image: url("Imagenes/so.jpg"), radial-gradient(circle at 72% 30%, #536747, transparent 32%), linear-gradient(135deg,#07110d,#1d3828); }
 .solutions-hero .inner-hero-bg { background-image: url("Imagenes/recuperacion.jpg"), radial-gradient(circle at 70% 32%, #3f704d, transparent 34%), linear-gradient(135deg,#07110d,#173e28); }
-.quote-bg { background-image: linear-gradient(135deg,#0b2117,#27573b); }
 .closing-bg { background-image: url("Imagenes/final.jpg"), linear-gradient(135deg,#07110d,#245537); }
 .next-impactos { background-image: url("Imagenes/causas.jpg"), linear-gradient(135deg,#07110d,#324c31); }
 .next-sociedad { background-image: url("Imagenes/impacto.jpg"), linear-gradient(135deg,#07110d,#39422b); }
@@ -945,9 +943,10 @@ body:not(.js) .split-showcase .split-image, body:not(.js) .split-showcase .split
 .quote-section .quote-bg {
   inset: 0;
   transform: none !important;
+  /* Imagen final de Inicio: sube otra foto a Imagenes/ y cambia final.jpg. */
   background:
-    linear-gradient(118deg, transparent 0 48%, rgba(156,233,177,.05) 49% 49.3%, transparent 50%),
-    radial-gradient(circle at 50% 50%, rgba(94,228,134,.07), transparent 42%);
+    linear-gradient(180deg, rgba(4,12,8,.42), rgba(4,12,8,.68)),
+    url("Imagenes/final.jpg") center 52% / cover no-repeat;
   opacity: 1;
 }
 .quote-section .quote-overlay { background: linear-gradient(180deg, rgba(4,12,8,.08), rgba(4,12,8,.28)); }
