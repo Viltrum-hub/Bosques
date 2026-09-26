@@ -258,7 +258,7 @@ body.page-enter .page-transition { animation: pageEnter .7s cubic-bezier(.77,0,.
   transform: scale(1.08);
 }
 
-.hero-bg { background-image: url("Imagenes/bosque-amanecer-usgs.jpg"); }
+.hero-bg { background-image: url("Imagenes/bosque-aereo-ozark.jpg"); }
 .page-home .hero-bg { transform: scale(1.035); filter: saturate(1.08) contrast(1.02); }
 .causes-hero .inner-hero-bg { background-image: url("Imagenes/huella.jpg"); }
 .impacts-hero .inner-hero-bg { background-image: url("Imagenes/pagina2.jpg"); }
@@ -872,7 +872,7 @@ html { scroll-padding-top: calc(var(--header-h) + 22px); }
 .text-link:hover span, .arrow-link:hover span { transform: translate(6px,-2px); }
 .feature-panel, .impact-card, .social-card, .solution-item { isolation: isolate; }
 .image-badge { box-shadow: 0 10px 30px rgba(0,0,0,.24); }
-.hero-bg { background-image: url("Imagenes/bosque-amanecer-usgs.jpg"), radial-gradient(circle at 72% 30%, #315f45, transparent 32%), linear-gradient(135deg,#07110d,#163d29); }
+.hero-bg { background-image: url("Imagenes/bosque-aereo-ozark.jpg"), radial-gradient(circle at 72% 30%, #315f45, transparent 32%), linear-gradient(135deg,#07110d,#163d29); }
 .causes-hero .inner-hero-bg { background-image: url("Imagenes/huella.jpg"), radial-gradient(circle at 70% 35%, #315f45, transparent 34%), linear-gradient(135deg,#07110d,#173d2a); }
 .impacts-hero .inner-hero-bg { background-image: url("Imagenes/pagina2.jpg"), radial-gradient(circle at 68% 28%, #664a31, transparent 32%), linear-gradient(135deg,#07110d,#26382b); }
 .society-hero .inner-hero-bg { background-image: url("Imagenes/so.jpg"), radial-gradient(circle at 72% 30%, #536747, transparent 32%), linear-gradient(135deg,#07110d,#1d3828); }
@@ -1187,7 +1187,7 @@ a.theory-reference:hover { transform: translateY(-5px); border-color: var(--gree
 }
 
 /* Fotografías seleccionadas para cada capítulo */
-.page-home .hero-bg { background-position: center 42%; }
+.page-home .hero-bg { background-position: center 50%; }
 .about-statement-image img { object-position: center 45%; }
 .human-image img { object-position: 45% center; }
 .solution-highlight-image img { object-position: 58% center; }
@@ -1195,6 +1195,6 @@ a.theory-reference:hover { transform: translateY(-5px); border-color: var(--gree
   overflow: hidden;
   border: 1px solid var(--line-strong);
   border-radius: 32px 32px 8px 32px;
-  background: linear-gradient(rgba(4, 17, 11, .48), rgba(4, 17, 11, .68)), url("Imagenes/arroyo-forestal-usgs.jpg") center / cover;
+  background: linear-gradient(rgba(4, 17, 11, .48), rgba(4, 17, 11, .68)), url("Imagenes/arroyo-forestal-silantev.jpg") center / cover;
   box-shadow: var(--shadow);
 }
