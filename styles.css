@@ -258,13 +258,13 @@ body.page-enter .page-transition { animation: pageEnter .7s cubic-bezier(.77,0,.
   transform: scale(1.08);
 }
 
-.hero-bg { background-image: url("Imagenes/b.jpg"); }
+.hero-bg { background-image: url("Imagenes/bosque-amanecer-usgs.jpg"); }
 .page-home .hero-bg { transform: scale(1.035); filter: saturate(1.08) contrast(1.02); }
 .causes-hero .inner-hero-bg { background-image: url("Imagenes/huella.jpg"); }
 .impacts-hero .inner-hero-bg { background-image: url("Imagenes/pagina2.jpg"); }
 .society-hero .inner-hero-bg { background-image: url("Imagenes/so.jpg"); }
 .solutions-hero .inner-hero-bg { background-image: url("Imagenes/recuperacion.jpg"); }
-.quote-bg { background-image: url("Imagenes/hoja.jpg"); }
+.quote-bg { background-image: linear-gradient(135deg, #0b2117, #27573b); }
 .closing-bg { background-image: url("Imagenes/final.jpg"); }
 .next-impactos { background-image: url("Imagenes/causas.jpg"); }
 .next-sociedad { background-image: url("Imagenes/impacto.jpg"); }
@@ -665,7 +665,7 @@ blockquote { font-size: clamp(2.4rem, 5vw, 5rem); margin: 0 0 34px; letter-spaci
 /* Footer */
 .site-footer {
   display: grid;
-  grid-template-columns: 1.2fr .8fr auto;
+  grid-template-columns: 1fr auto;
   gap: 38px;
   align-items: end;
   padding: 72px clamp(24px, 5vw, 76px);
@@ -674,9 +674,6 @@ blockquote { font-size: clamp(2.4rem, 5vw, 5rem); margin: 0 0 34px; letter-spaci
 }
 .footer-brand { margin-bottom: 18px; }
 .site-footer > div:first-child p { max-width: 440px; margin-bottom: 0; }
-.footer-links { display: grid; gap: 8px; }
-.footer-links a { color: var(--muted); transition: color .25s ease, transform .25s ease; }
-.footer-links a:hover { color: var(--green-soft); transform: translateX(4px); }
 .copyright { margin: 0; white-space: nowrap; font-size: .8rem; }
 
 /* Reveal system */
@@ -792,8 +789,6 @@ blockquote { font-size: clamp(2.4rem, 5vw, 5rem); margin: 0 0 34px; letter-spaci
   .solution-highlight-copy,
   .split-content { border-left: 0; border-top: 1px solid var(--line); }
   .stat-visual { min-height: 420px; }
-  .site-footer { grid-template-columns: 1fr 1fr; }
-  .copyright { grid-column: 1 / -1; }
 }
 
 @media (max-width: 620px) {
@@ -852,7 +847,7 @@ html { scroll-padding-top: calc(var(--header-h) + 22px); }
 }
 .skip-link:focus { transform: translateY(0); }
 .brand-mark { font-size: 1.35rem; transition: transform .35s ease, box-shadow .35s ease; }
-.brand:hover .brand-mark { transform: translateY(-2px) rotate(-8deg); box-shadow: 0 0 0 7px rgba(94,228,134,.08), 0 18px 38px rgba(0,0,0,.3); }
+.site-header .brand:hover .brand-mark { transform: translateY(-2px) rotate(-8deg); box-shadow: 0 0 0 7px rgba(94,228,134,.08), 0 18px 38px rgba(0,0,0,.3); }
 .site-header.scrolled { box-shadow: 0 14px 44px rgba(0,0,0,.2); }
 .inner-hero-content h1, .hero-title { text-wrap: balance; }
 .inner-hero-content > p:last-child, .hero-copy { color: #c7d6cc; text-wrap: pretty; }
@@ -877,12 +872,12 @@ html { scroll-padding-top: calc(var(--header-h) + 22px); }
 .text-link:hover span, .arrow-link:hover span { transform: translate(6px,-2px); }
 .feature-panel, .impact-card, .social-card, .solution-item { isolation: isolate; }
 .image-badge { box-shadow: 0 10px 30px rgba(0,0,0,.24); }
-.hero-bg { background-image: url("Imagenes/b.jpg"), radial-gradient(circle at 72% 30%, #315f45, transparent 32%), linear-gradient(135deg,#07110d,#163d29); }
+.hero-bg { background-image: url("Imagenes/bosque-amanecer-usgs.jpg"), radial-gradient(circle at 72% 30%, #315f45, transparent 32%), linear-gradient(135deg,#07110d,#163d29); }
 .causes-hero .inner-hero-bg { background-image: url("Imagenes/huella.jpg"), radial-gradient(circle at 70% 35%, #315f45, transparent 34%), linear-gradient(135deg,#07110d,#173d2a); }
 .impacts-hero .inner-hero-bg { background-image: url("Imagenes/pagina2.jpg"), radial-gradient(circle at 68% 28%, #664a31, transparent 32%), linear-gradient(135deg,#07110d,#26382b); }
 .society-hero .inner-hero-bg { background-image: url("Imagenes/so.jpg"), radial-gradient(circle at 72% 30%, #536747, transparent 32%), linear-gradient(135deg,#07110d,#1d3828); }
 .solutions-hero .inner-hero-bg { background-image: url("Imagenes/recuperacion.jpg"), radial-gradient(circle at 70% 32%, #3f704d, transparent 34%), linear-gradient(135deg,#07110d,#173e28); }
-.quote-bg { background-image: url("Imagenes/hoja.jpg"), linear-gradient(135deg,#0b2117,#27573b); }
+.quote-bg { background-image: linear-gradient(135deg,#0b2117,#27573b); }
 .closing-bg { background-image: url("Imagenes/final.jpg"), linear-gradient(135deg,#07110d,#245537); }
 .next-impactos { background-image: url("Imagenes/causas.jpg"), linear-gradient(135deg,#07110d,#324c31); }
 .next-sociedad { background-image: url("Imagenes/impacto.jpg"), linear-gradient(135deg,#07110d,#39422b); }
@@ -1056,9 +1051,9 @@ body:not(.js) .split-showcase .split-image, body:not(.js) .split-showcase .split
   background-image: url("Imagenes/bosque.jpg"), linear-gradient(135deg, #07110d, #1b432b);
 }
 .theory-hero .inner-hero-bg {
-  background-image: url("Imagenes/refo.jpg"), linear-gradient(135deg, #07110d, #245537);
+  background-image: url("Imagenes/bosque.jpg"), linear-gradient(135deg, #07110d, #245537);
 }
-.next-theory { background-image: url("Imagenes/refo.jpg"), linear-gradient(135deg, #07110d, #245537); }
+.next-theory { background-image: url("Imagenes/bosque.jpg"), linear-gradient(135deg, #07110d, #245537); }
 .next-causes { background-image: url("Imagenes/causas.jpg"), linear-gradient(135deg, #07110d, #39422b); }
 .accent-word { color: var(--green-soft); }
 
@@ -1189,4 +1184,17 @@ a.theory-reference:hover { transform: translateY(-5px); border-color: var(--gree
   .theory-chapters { padding-bottom: 70px; }
   .theory-chapter-body { padding: 25px; }
   .theory-synthesis-art { min-height: 310px; }
+}
+
+/* Fotografías seleccionadas para cada capítulo */
+.page-home .hero-bg { background-position: center 42%; }
+.about-statement-image img { object-position: center 45%; }
+.human-image img { object-position: 45% center; }
+.solution-highlight-image img { object-position: 58% center; }
+.stat-visual {
+  overflow: hidden;
+  border: 1px solid var(--line-strong);
+  border-radius: 32px 32px 8px 32px;
+  background: linear-gradient(rgba(4, 17, 11, .48), rgba(4, 17, 11, .68)), url("Imagenes/arroyo-forestal-usgs.jpg") center / cover;
+  box-shadow: var(--shadow);
 }
