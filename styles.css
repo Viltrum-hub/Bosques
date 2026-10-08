@@ -1098,6 +1098,18 @@ body:not(.js) .split-showcase .split-image, body:not(.js) .split-showcase .split
 .about-intro-copy, .theory-opening-copy { padding-top: 45px; font-size: 1.06rem; }
 .about-intro-copy p, .theory-opening-copy p { max-width: 620px; }
 .about-intro-copy .text-link { display: inline-block; margin-top: 12px; }
+.about-identity { border-block: 1px solid var(--line); }
+.about-identity-grid { display: grid; grid-template-columns: .95fr 1.05fr; align-items: center; gap: clamp(38px, 7vw, 100px); }
+.about-logo-panel { min-width: 0; padding: clamp(28px, 4vw, 56px); text-align: center; border: 1px solid var(--line-strong); border-radius: 30px 30px 8px 30px; background: radial-gradient(circle at 50% 45%, rgba(94, 228, 134, .12), transparent 70%), var(--bg-soft); }
+.about-logo-panel .eyebrow { margin-bottom: 38px; }
+.about-logo { gap: clamp(14px, 2vw, 24px); }
+.about-logo .brand-mark { width: clamp(56px, 7vw, 88px); height: clamp(56px, 7vw, 88px); font-size: clamp(2rem, 4vw, 3.2rem); border-radius: 22px 22px 22px 7px; }
+.about-logo .brand-text { font: 700 clamp(1.5rem, 3vw, 2.8rem)/1.2 "Space Grotesk", sans-serif; letter-spacing: .1em; }
+.about-logo-caption { margin: 32px 0 0; color: var(--green-soft); }
+.about-identity-copy { min-width: 0; }
+.about-identity-copy strong, .about-inline-mark { color: var(--green-soft); }
+.about-inline-mark { font-size: 1.3em; }
+.about-slogan-copy { max-width: 680px; margin-top: 24px; }
 .about-pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
 .about-pillars .feature-panel { display: flex; flex-direction: column; min-height: 350px; }
 .about-pillars .feature-panel h3 { margin: auto 0 14px; padding-top: 44px; }
@@ -1176,6 +1188,7 @@ a.theory-reference:hover { transform: translateY(-5px); border-color: var(--gree
 .theory-reference p { margin: 0; font-size: .9rem; }
 
 @media (max-width: 1050px) {
+  .about-identity-grid { grid-template-columns: 1fr; }
   .home-route-grid, .about-intro-grid, .theory-opening-grid, .about-statement-grid, .theory-chapter, .theory-synthesis-grid { grid-template-columns: 1fr; }
   .about-intro-copy, .theory-opening-copy { padding-top: 0; }
   .about-pillars { grid-template-columns: 1fr; }
